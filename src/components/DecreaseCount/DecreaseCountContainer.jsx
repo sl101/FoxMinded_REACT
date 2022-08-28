@@ -8,12 +8,8 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        decreaseValue: (value) => {
-            dispatch(decreaseAction(value))
-        },
-    }
+const mapDispatchToProps = {
+    decreaseAction,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(DecreaseCount)

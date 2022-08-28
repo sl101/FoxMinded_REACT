@@ -2,7 +2,7 @@ import React from 'react'
 
 class DecreaseCount extends React.Component {
     decrease = () => {
-        this.props.decreaseValue(this.props.mutableValue)
+        this.props.decreaseAction(this.props.mutableValue)
     }
 
     render() {

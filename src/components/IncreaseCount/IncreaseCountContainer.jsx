@@ -8,12 +8,8 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        increaseValue: (value) => {
-            dispatch(increaseAction(value))
-        },
-    }
+const mapDispatchToProps = {
+    increaseAction,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(IncreaseCount)
