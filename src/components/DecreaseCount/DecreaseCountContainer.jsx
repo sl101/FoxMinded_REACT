@@ -1,15 +1,15 @@
-import { connect } from 'react-redux'
-import { decreaseAction } from '../../redux/content-reduser'
-import DecreaseCount from './DecreaseCount'
+import { connect } from 'react-redux';
+import { decreaseAction } from '../../redux/content-reduser';
+import DecreaseCount from './DecreaseCount';
 
 const mapStateToProps = (state) => {
-    return {
-        mutableValue: state.contentData.mutableValue,
-    }
-}
+  return {
+    mutableValue: state.contentData.mutableValue,
+  };
+};
 
 const mapDispatchToProps = {
-    decreaseAction,
-}
+  decreaseAction,
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(DecreaseCount)
+export default connect(mapStateToProps, mapDispatchToProps)(DecreaseCount);
