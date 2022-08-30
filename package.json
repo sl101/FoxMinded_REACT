@@ -13,8 +13,6 @@
         "web-vitals": "^2.1.4"
     },
     "devDependencies": {
-        "@redux-devtools/core": "^3.13.1",
-        "@reduxjs/toolkit": "^1.8.4",
         "eslint": "^8.22.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-prettier": "^8.5.0",
@@ -24,10 +22,7 @@
         "eslint-plugin-react": "^7.31.1",
         "eslint-plugin-react-hooks": "^4.6.0",
         "lint-staged": "^13.0.3",
-        "nth-check": "^2.0.1",
         "prettier": "2.7.1",
-        "react-redux": "^8.0.2",
-        "redux": "^4.2.0",
         "sass": "^1.54.4",
         "simple-git-hooks": "^2.8.0"
     },
@@ -46,7 +41,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "eslint": "eslint"
     },
     "eslintConfig": {
         "extends": [

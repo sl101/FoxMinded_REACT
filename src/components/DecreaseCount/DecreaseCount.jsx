@@ -7,7 +7,11 @@ class DecreaseCount extends React.Component {
 
   render() {
     return (
-      <button className="decreaseButton button" onClick={this.decrease}>
+      <button
+        className="decreaseButton button"
+        onClick={this.decrease}
+        type="button"
+      >
         Decrement counter
       </button>
     );
