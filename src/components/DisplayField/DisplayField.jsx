@@ -1,7 +1,7 @@
-import style from './DisplayField.module.scss';
+// import style from './DisplayField.module.scss';
 
-const DisplayField = (props) => {
-  return <span className={style.resultField}>{props.number}</span>;
-};
+// const DisplayField = (props) => {
+//   return <span className={style.resultField}>{props.number}</span>;
+// };
 
-export default DisplayField;
+// export default DisplayField;

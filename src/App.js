@@ -1,22 +1,27 @@
+import React from 'react';
 import './App.scss';
-import DecreaseCountContainer from './components/DecreaseCount/DecreaseCountContainer';
-import DisplayFieldContainer from './components/DisplayField/DisplayFieldContainer';
-import LogoContainer from './components/Header/LogoContainer';
-import IncreaseCountContainer from './components/IncreaseCount/IncreaseCountContainer';
+// import DecreaseCountContainer from './components/DecreaseCount/DecreaseCountContainer';
+// import DisplayFieldContainer from './components/DisplayField/DisplayFieldContainer';
+// import LogoContainer from './components/Header/LogoContainer';
+// import IncreaseCountContainer from './components/IncreaseCount/IncreaseCountContainer';
 
-const App = () => {
+function App() {
   return (
     <div className="wrapper">
-      <LogoContainer />
+      {/* <LogoContainer /> */}
+      Wrapper
       <div className="content">
+        Content
         <div className="inner">
-          <IncreaseCountContainer />
-          <DecreaseCountContainer />
+          {/* <IncreaseCountContainer />
+          <DecreaseCountContainer /> */}
+          Content inner
         </div>
-        <DisplayFieldContainer />
+        Some fileld
+        {/* <DisplayFieldContainer /> */}
       </div>
     </div>
   );
-};
+}
 
 export default App;

@@ -1,21 +1,21 @@
-import React from 'react';
+// import React from 'react';
 
-class DecreaseCount extends React.Component {
-  decrease = () => {
-    this.props.decreaseAction(this.props.mutableValue);
-  };
+// class DecreaseCount extends React.Component {
+//   decrease = () => {
+//     this.props.decreaseAction(this.props.mutableValue);
+//   };
 
-  render() {
-    return (
-      <button
-        className="decreaseButton button"
-        onClick={this.decrease}
-        type="button"
-      >
-        Decrement counter
-      </button>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <button
+//         className="decreaseButton button"
+//         onClick={this.decrease}
+//         type="button"
+//       >
+//         Decrement counter
+//       </button>
+//     );
+//   }
+// }
 
-export default DecreaseCount;
+// export default DecreaseCount;

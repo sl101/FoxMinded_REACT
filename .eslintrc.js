@@ -11,9 +11,8 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:import/recommended',
     'prettier',
+    'react-app',
     'airbnb',
-		// 'react-app',
-		// 'react-app/jest',
   ],
   overrides: [],
   parserOptions: {
@@ -22,10 +21,11 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'eslint linebreak-style': ['error', 'windows'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    // 'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.js', '**/*.spec.js'] }],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.js', '**/*.spec.js'] }],
     'react/prop-types': 'off',
+    'global-require': 0,
+    'linebreak-style': ['error', 'windows'],
   },
   settings: {
     'import/resolver': {
