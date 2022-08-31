@@ -21,11 +21,30 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'react/jsx-one-expression-per-line': [0, { allow: ['none', 'literal', 'single-child'] }],
+
+    'react/function-component-definition': [1,
+      {
+        namedComponents: ['function-declaration', 'arrow-function'],
+        unnamedComponents: ['function-expression', 'arrow-function'],
+      },
+    ],
+
+    'react/destructuring-assignment': [1, 'never', { ignoreClassFields: true, destructureInSignature: 'ignore' }],
+
+    'react/prefer-stateless-function': [0, { ignorePureComponents: true }],
+
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+
     'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.js', '**/*.spec.js'] }],
+
     'react/prop-types': 'off',
+
     'global-require': 0,
+
     'linebreak-style': ['error', 'windows'],
+
+    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
   },
   settings: {
     'import/resolver': {

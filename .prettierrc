@@ -1,7 +1,7 @@
 {
   "eslint.autoFixOnSave": true,
-  "jsxSingleQuote": true,
-  "trailingComma": "es6",
+  "jsxSingleQuote": false,
+  "es6": true,
   "semi": true,
   "singleQuote": true
 }
