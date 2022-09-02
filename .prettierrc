@@ -1,7 +1,0 @@
-{
-  "eslint.autoFixOnSave": true,
-  "jsxSingleQuote": false,
-  "es6": true,
-  "semi": true,
-  "singleQuote": true
-}
