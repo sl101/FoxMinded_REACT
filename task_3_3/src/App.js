@@ -1,12 +1,21 @@
 import React from 'react';
-import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+
+import './scss/App.css';
+import './scss/reset.css';
+
+import PostsList from './components/PostsList';
+import TodoList from './components/TodoList';
+import UserList from './components/UserList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-		<h2>TASK_3_3</h2>
-      </header>
+      <Routes>
+        <Route path="/postlist" element={<PostsList />} />
+        <Route path="/todolist" element={<TodoList />} />
+        <Route path="/userlist" element={<UserList />} />
+      </Routes>
     </div>
   );
 }
