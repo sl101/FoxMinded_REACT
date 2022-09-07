@@ -1,12 +1,8 @@
 import React from 'react';
-import Navigation from './Navigation';
 
 function TodoList() {
   return (
     <section className="todoList">
-      <header className="App-header">
-        <Navigation />
-      </header>
       <div className="container">
         <h2 className="title">Welcome to TodoList!</h2>
         <p className="text">

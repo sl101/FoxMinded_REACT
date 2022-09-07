@@ -1,12 +1,8 @@
 import React from 'react';
-import Navigation from './Navigation';
 
 function PostsList() {
   return (
     <section className="postsList">
-      <header className="App-header">
-        <Navigation />
-      </header>
       <div className="container">
         <h2 className="title">Welcome to PostsList!</h2>
         <p className="text">
