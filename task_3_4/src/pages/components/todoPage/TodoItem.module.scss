@@ -1,0 +1,12 @@
+.item {
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.body {
+	display: block;
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
