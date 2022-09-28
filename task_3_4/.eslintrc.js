@@ -35,12 +35,17 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
 
-    'implicit-arrow-linebreak': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
 
     'global-require': 'off',
     'default-param-last': 'off',
     'linebreak-style': 'off',
     'comma-dangle': 'off',
+    'prefer-template': 'off',
+
+    'implicit-arrow-linebreak': 'off',
+    'object-curly-newline': 'off',
+    'operator-linebreak': 'off',
 
     'function-paren-newline': 'off',
     'no-param-reassign': ['error', { props: false }],

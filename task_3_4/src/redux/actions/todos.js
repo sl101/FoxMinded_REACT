@@ -1,12 +1,12 @@
-import { receiveTodos } from '../reducers/todoSlice';
+import { receiveTodos, completeTodo, changeTodo } from '../reducers/todoSlice';
 import todosAPI from '../api/todosApi';
 import { showLoader, hideLoader } from '../reducers/loaderSlice';
 
-const getTodos = () => async (dispatch) => {
+export const getTodos = () => async (dispatch) => {
   try {
     dispatch(showLoader());
-    const responce = await todosAPI.fetchTodos();
-    dispatch(receiveTodos(responce.data));
+    const response = await todosAPI.fetchTodos('/todos');
+    dispatch(receiveTodos(response.data));
   } catch (error) {
     alert(error.message);
   } finally {
@@ -14,4 +14,31 @@ const getTodos = () => async (dispatch) => {
   }
 };
 
-export default getTodos;
+export const getSelect = (selectedTarget) => async (dispatch) => {
+  const { id, completed } = selectedTarget;
+
+  const isCompleted = {
+    completed: !completed
+  };
+  try {
+    const responce = await todosAPI.patchRequest(`todos/${id}`, isCompleted);
+    dispatch(completeTodo(responce.data));
+  } catch (error) {
+    alert(error.message);
+  }
+};
+
+export const changeTodoAPI = (targetElement) => async (dispatch) => {
+  const { id, inputTitle } = targetElement;
+
+  const dataTitle = {
+    title: inputTitle
+  };
+
+  try {
+    const responce = await todosAPI.patchRequest(`todos/${id}`, dataTitle);
+    dispatch(changeTodo(responce.data));
+  } catch (error) {
+    alert(error.message);
+  }
+};

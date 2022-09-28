@@ -1,8 +1,11 @@
 import dataFetch from '../../utils/axios';
 
 const todosAPI = {
-  fetchTodos() {
-    return dataFetch.get('/todos');
+  fetchTodos(value) {
+    return dataFetch.get(value);
+  },
+  patchRequest(path, value) {
+    return dataFetch.patch(path, value);
   }
 };
 
