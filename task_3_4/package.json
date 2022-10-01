@@ -24,6 +24,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
+    "react-hook-form": "^7.36.1",
     "sass": "^1.54.4",
     "simple-git-hooks": "^2.8.0"
   },
