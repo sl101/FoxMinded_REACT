@@ -1,9 +1,9 @@
-import { receivePosts } from '../reducers/postSlice';
+import { receivePosts, inputPost } from '../reducers/postSlice';
 import { showLoader, hideLoader } from '../reducers/loaderSlice';
 
 import postsAPI from '../api/postsApi';
 
-const getPosts = () => async (dispatch) => {
+export const getPosts = () => async (dispatch) => {
   try {
     dispatch(showLoader());
     const responce = await postsAPI.fetchPosts();
@@ -15,4 +15,20 @@ const getPosts = () => async (dispatch) => {
   }
 };
 
-export default getPosts;
+export const inputPostAPI = (data) => async (dispatch) => {
+  const { title, body, userId } = data;
+  const userIdValue = Number(userId);
+
+  const postData = {
+    title,
+    body,
+    userId: userIdValue
+  };
+
+  try {
+    const responce = await postsAPI.postRequest('/posts', postData);
+    dispatch(inputPost(responce.data));
+  } catch (error) {
+    alert(error.message);
+  }
+};
