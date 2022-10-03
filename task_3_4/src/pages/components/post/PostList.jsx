@@ -7,6 +7,7 @@ const PostList = ({ isLoading, posts }) => {
   if (isLoading) {
     return <Preloader />;
   }
+
   return (
     <ul>
       {posts.map((post) => (
