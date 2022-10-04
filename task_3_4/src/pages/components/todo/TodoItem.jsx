@@ -31,6 +31,7 @@ const TodoItem = ({
 
   const requestCancelChange = () => {
     setTitle(focusTitle);
+    setEdit(false);
   };
 
   return (
