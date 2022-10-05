@@ -16,11 +16,25 @@
 }
 
 .item {
-	font-weight: 500;
-	font-size: 32px;
-	color: teal;
-	white-space: pre-line;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	&:not(:last-child) {
 		margin-bottom: 25px;
 	}
+}
+
+.icon {
+	color: teal;
+	min-height: 30px;
+}
+
+.value {
+	display: block;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 40px;
+	padding-left: 30px;
+	color: #555;
+	white-space: pre-line;
 }
