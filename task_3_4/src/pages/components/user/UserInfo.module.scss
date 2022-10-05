@@ -1,0 +1,26 @@
+.userInfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner {
+	flex: 0 0 90%;
+	background-color: white;
+	padding: 40px;
+}
+
+.list {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.item {
+	font-weight: 500;
+	font-size: 32px;
+	color: teal;
+	white-space: pre-line;
+	&:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}

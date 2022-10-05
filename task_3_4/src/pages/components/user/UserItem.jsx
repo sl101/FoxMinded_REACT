@@ -1,12 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import style from './UserItem.module.scss';
 
 const UserItem = (props) => {
-  const { name, username } = props.user;
+  const { id, name, username } = props.user;
 
   return (
     <li className={style.item}>
-      <span className={style.name}>{name}</span>
+      <NavLink className={style.name} to={'/userpage/' + id}>
+        {name}
+      </NavLink>
       <span className={style.username}>{username}</span>
     </li>
   );

@@ -8,6 +8,7 @@ import Navigation from './components/Navigation';
 import PostsListPage from './pages/PostListPage';
 import TodoListPage from './pages/TodoListPage';
 import UserListPage from './pages/UserListPage';
+import UserPage from './pages/UserPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<PostsListPage />} />
           <Route path="/todolist" element={<TodoListPage />} />
           <Route path="/userlist" element={<UserListPage />} />
+          <Route path="/userpage/:id" element={<UserPage />} />
         </Routes>
       </main>
     </div>
