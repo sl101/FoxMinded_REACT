@@ -1,11 +1,11 @@
-import { receiveUsers } from '../reducers/userSlice';
+import { receiveUsers, receiveUser } from '../reducers/userSlice';
 import usersAPI from '../api/usersApi';
 import { showLoader, hideLoader } from '../reducers/loaderSlice';
 
-const getUsers = () => async (dispatch) => {
+export const getUsers = () => async (dispatch) => {
   try {
     dispatch(showLoader());
-    const responce = await usersAPI.fetchUsers();
+    const responce = await usersAPI.fetchUsers('/users');
     dispatch(receiveUsers(responce.data));
   } catch (error) {
     alert(error.message);
@@ -14,4 +14,14 @@ const getUsers = () => async (dispatch) => {
   }
 };
 
-export default getUsers;
+export const getUser = (id) => async (dispatch) => {
+  try {
+    dispatch(showLoader());
+    const responce = await usersAPI.fetchUsers('/users/' + id);
+    dispatch(receiveUser(responce.data));
+  } catch (error) {
+    alert(error.message);
+  } finally {
+    dispatch(hideLoader());
+  }
+};

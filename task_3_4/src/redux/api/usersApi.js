@@ -1,8 +1,8 @@
 import dataFetch from '../../utils/axios';
 
 const usersAPI = {
-  fetchUsers() {
-    return dataFetch.get('/users');
+  fetchUsers(path) {
+    return dataFetch.get(path);
   }
 };
 
