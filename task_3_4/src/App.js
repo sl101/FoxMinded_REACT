@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import './styles/App.scss';
 import './styles/reset.scss';
 
+import { AppRoutes } from './redux/constants/routes';
+
 import { Navigation } from './components/Navigation';
 import { PostListPage } from './pages/PostListPage';
 import { TodoListPage } from './pages/TodoListPage';
@@ -20,10 +22,10 @@ export function App() {
       </header>
       <main className="appContain">
         <Routes>
-          <Route path="/" element={<PostListPage />} />
-          <Route path="/todolist" element={<TodoListPage />} />
-          <Route path="/userlist" element={<UserListPage />} />
-          <Route path="/userpage/:id" element={<UserPage />} />
+          <Route path={AppRoutes.PostsList} element={<PostListPage />} />
+          <Route path={AppRoutes.TodoList} element={<TodoListPage />} />
+          <Route path={AppRoutes.UserList} element={<UserListPage />} />
+          <Route path={AppRoutes.UserPage} element={<UserPage />} />
         </Routes>
       </main>
     </div>
