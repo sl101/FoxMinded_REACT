@@ -1,8 +1,8 @@
 import React from 'react';
-import UserItem from './UserItem';
-import Preloader from '../../../components/Preloader';
+import { UserItem } from './UserItem';
+import { Preloader } from '../../../components/Preloader';
 
-const UserList = ({ isLoading, users }) => {
+export const UserList = ({ isLoading, users }) => {
   if (isLoading) {
     return <Preloader />;
   }
@@ -14,5 +14,3 @@ const UserList = ({ isLoading, users }) => {
     </ul>
   );
 };
-
-export default UserList;

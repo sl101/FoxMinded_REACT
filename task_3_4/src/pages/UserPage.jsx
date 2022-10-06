@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getUser } from '../redux/actions/users';
-import Preloader from '../components/Preloader';
-import UserInfo from './components/user/UserInfo';
+import { Preloader } from '../components/Preloader';
+import { UserInfo } from './components/UserInfo';
 
-const UserPage = () => {
+export const UserPage = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
 
@@ -24,4 +24,3 @@ const UserPage = () => {
     </div>
   );
 };
-export default UserPage;

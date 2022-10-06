@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './PostItem.module.scss';
 
-const PostItem = (props) => {
+export const PostItem = (props) => {
   const { title, body } = props.post;
   return (
     <li className={style.item}>
@@ -10,5 +10,3 @@ const PostItem = (props) => {
     </li>
   );
 };
-
-export default PostItem;

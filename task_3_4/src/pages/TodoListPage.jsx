@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getTodos, getSelect, changeTodoAPI } from '../redux/actions/todos';
 
-import TodoList from './components/todo/TodoList';
+import { TodoList } from './components/TodoList';
 
-const TodoListPage = () => {
+export const TodoListPage = () => {
   const dispatch = useDispatch();
 
   const { isLoading } = useSelector((state) => state.loader);
@@ -38,5 +38,3 @@ const TodoListPage = () => {
     </section>
   );
 };
-
-export default TodoListPage;

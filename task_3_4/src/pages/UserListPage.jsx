@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUsers } from '../redux/actions/users';
-import UserList from './components/user/UserList';
+import { UserList } from './components/UserList';
 
-const UserListPage = () => {
+export const UserListPage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,5 +22,3 @@ const UserListPage = () => {
     </section>
   );
 };
-
-export default UserListPage;

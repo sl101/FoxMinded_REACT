@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './UserItem.module.scss';
 
-const UserItem = (props) => {
+export const UserItem = (props) => {
   const { id, name, username } = props.user;
 
   return (
@@ -14,5 +14,3 @@ const UserItem = (props) => {
     </li>
   );
 };
-
-export default UserItem;

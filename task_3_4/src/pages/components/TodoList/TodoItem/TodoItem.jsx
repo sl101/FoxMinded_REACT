@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import style from './TodoItem.module.scss';
 
-const TodoItem = ({
+export const TodoItem = ({
   todo: { id, title, completed },
   toggleSelect,
   handleChange
@@ -74,5 +74,3 @@ const TodoItem = ({
     </li>
   );
 };
-
-export default TodoItem;

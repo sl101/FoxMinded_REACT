@@ -1,13 +1,11 @@
 import React from 'react';
-import PostItem from './PostItem';
+import { PostItem } from './PostItem';
+import { Preloader } from '../../../components/Preloader';
 
-import Preloader from '../../../components/Preloader';
-
-const PostList = ({ isLoading, posts }) => {
+export const PostList = ({ isLoading, posts }) => {
   if (isLoading) {
     return <Preloader />;
   }
-
   return (
     <ul>
       {posts.map((post) => (
@@ -16,5 +14,3 @@ const PostList = ({ isLoading, posts }) => {
     </ul>
   );
 };
-
-export default PostList;

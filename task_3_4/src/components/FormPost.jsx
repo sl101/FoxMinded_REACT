@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
+import clsx from 'clsx';
 import style from './FormPost.module.scss';
 import { inputPostAPI } from '../redux/actions/posts';
 
-const FormPost = () => {
+export const FormPost = () => {
   const dispatch = useDispatch();
 
   const {
@@ -98,5 +98,3 @@ const FormPost = () => {
     </div>
   );
 };
-
-export default FormPost;
