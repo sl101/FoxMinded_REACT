@@ -9,13 +9,13 @@ export const UserPage = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
 
-  useEffect(() => {
-    dispatch(getUser(id));
-  }, [dispatch, id]);
-
   const user = useSelector((state) => state.user.user);
 
-  if (user.length === 0) {
+  useEffect(() => {
+    dispatch(getUser(id));
+  }, []);
+
+  if (!user.name) {
     return <Preloader />;
   }
   return (

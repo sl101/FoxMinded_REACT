@@ -26,7 +26,6 @@ export const FormPost = () => {
     <div>
       <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
         <label className={style.label}>
-          {/* User ID */}
           <input
             className={clsx(style.input, style.inputId, {
               [style.errorShadow]: errors?.userId

@@ -13,7 +13,7 @@ export const PostListPage = () => {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch]);
+  }, []);
 
   return (
     <section>

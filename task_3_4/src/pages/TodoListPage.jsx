@@ -10,12 +10,6 @@ export const TodoListPage = () => {
   const { isLoading } = useSelector((state) => state.loader);
   const { todos } = useSelector((state) => state.todo);
 
-  useEffect(() => {
-    if (!todos.length) {
-      dispatch(getTodos());
-    }
-  }, [dispatch]);
-
   const toggleSelect = (selectTarget) => {
     dispatch(getSelect(selectTarget));
   };
@@ -23,6 +17,12 @@ export const TodoListPage = () => {
   const handleChange = (data) => {
     dispatch(changeTodoAPI(data));
   };
+
+  useEffect(() => {
+    if (!todos.length) {
+      dispatch(getTodos());
+    }
+  }, []);
 
   return (
     <section>

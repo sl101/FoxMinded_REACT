@@ -6,12 +6,12 @@ import { UserList } from './components/UserList';
 export const UserListPage = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getUsers());
-  }, [dispatch]);
-
   const { users } = useSelector((state) => state.user);
   const { isLoading } = useSelector((state) => state.loader);
+
+  useEffect(() => {
+    dispatch(getUsers());
+  }, []);
 
   return (
     <section>
