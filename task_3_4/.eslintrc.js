@@ -24,17 +24,19 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
 
-    'react-hooks/rules-of-hooks': 'off',
+    'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'off',
+
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-wrap-multilines': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-props-no-spreading': 'off',
+
     'react/function-component-definition': 'off',
     'react/prefer-stateless-function': 'off',
-    'react/jsx-filename-extension': 'off',
     'react/destructuring-assignment': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off',
-    'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
 
     'jsx-a11y/label-has-associated-control': 'off',
