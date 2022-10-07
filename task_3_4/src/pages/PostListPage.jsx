@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPosts } from '../redux/actions/posts';
 
-import PostList from './components/post/PostList';
-import FormPost from '../components/FormPost';
+import { PostList } from './components/PostList';
+import { FormPost } from '../components/FormPost';
 
-const PostListPage = () => {
+export const PostListPage = () => {
   const dispatch = useDispatch();
 
   const { posts } = useSelector((state) => state.post);
@@ -13,7 +13,7 @@ const PostListPage = () => {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch]);
+  }, []);
 
   return (
     <section>
@@ -25,5 +25,3 @@ const PostListPage = () => {
     </section>
   );
 };
-
-export default PostListPage;
