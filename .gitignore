@@ -1,6 +1,6 @@
-*/node_modules/
-*/package-lock.json
-*/.eslintcache
+node_modules/
+package-lock.json
+.eslintcache
 build/
 task_3_1/
 task_3_2/
