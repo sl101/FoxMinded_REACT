@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import getUsers from '../redux/actions/users';
+import { getUsers } from '../actions/users';
+import { UserList } from '../components/UserList';
 
-import UserList from './components/user/UserList';
-
-const UserListPage = () => {
+export const UserListPage = () => {
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getUsers());
-  }, [dispatch]);
 
   const { users } = useSelector((state) => state.user);
   const { isLoading } = useSelector((state) => state.loader);
+
+  useEffect(() => {
+    dispatch(getUsers());
+  }, []);
 
   return (
     <section>
@@ -23,5 +22,3 @@ const UserListPage = () => {
     </section>
   );
 };
-
-export default UserListPage;
