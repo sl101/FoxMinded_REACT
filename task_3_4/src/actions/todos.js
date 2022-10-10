@@ -1,6 +1,10 @@
-import { receiveTodos, completeTodo, changeTodo } from '../reducers/todoSlice';
-import todosAPI from '../api/todosApi';
-import { showLoader, hideLoader } from '../reducers/loaderSlice';
+import {
+  receiveTodos,
+  completeTodo,
+  changeTodo
+} from '../redux/reducers/todoSlice';
+import todosAPI from '../shared/todosApi';
+import { showLoader, hideLoader } from '../redux/reducers/loaderSlice';
 
 export const getTodos = () => async (dispatch) => {
   try {

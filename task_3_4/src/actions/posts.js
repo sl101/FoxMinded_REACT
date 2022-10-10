@@ -1,7 +1,7 @@
-import { receivePosts, inputPost } from '../reducers/postSlice';
-import { showLoader, hideLoader } from '../reducers/loaderSlice';
+import { receivePosts, inputPost } from '../redux/reducers/postSlice';
+import { showLoader, hideLoader } from '../redux/reducers/loaderSlice';
 
-import postsAPI from '../api/postsApi';
+import postsAPI from '../shared/postsApi';
 
 export const getPosts = () => async (dispatch) => {
   try {
