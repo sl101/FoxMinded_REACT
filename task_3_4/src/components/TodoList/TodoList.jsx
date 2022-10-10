@@ -1,9 +1,8 @@
 import React from 'react';
-import TodoItem from './TodoItem';
+import { TodoItem } from '../TodoItem';
+import { Preloader } from '../../shared/Preloader';
 
-import Preloader from '../../../components/Preloader';
-
-const TodoList = ({ isLoading, todos, toggleSelect, handleChange }) => {
+export const TodoList = ({ isLoading, todos, toggleSelect, handleChange }) => {
   if (isLoading) {
     return <Preloader />;
   }
@@ -20,5 +19,3 @@ const TodoList = ({ isLoading, todos, toggleSelect, handleChange }) => {
     </ul>
   );
 };
-
-export default TodoList;

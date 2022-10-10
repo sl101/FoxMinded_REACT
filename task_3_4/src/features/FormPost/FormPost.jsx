@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
+import clsx from 'clsx';
 import style from './FormPost.module.scss';
-import { inputPostAPI } from '../redux/actions/posts';
+import { inputPostAPI } from '../../actions/posts';
 
-const FormPost = () => {
+export const FormPost = () => {
   const dispatch = useDispatch();
 
   const {
@@ -26,7 +26,6 @@ const FormPost = () => {
     <div>
       <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
         <label className={style.label}>
-          {/* User ID */}
           <input
             className={clsx(style.input, style.inputId, {
               [style.errorShadow]: errors?.userId
@@ -98,5 +97,3 @@ const FormPost = () => {
     </div>
   );
 };
-
-export default FormPost;

@@ -1,4 +1,4 @@
-import dataFetch from '../../utils/axios';
+import dataFetch from '../utils/axios';
 
 const postsAPI = {
   fetchPosts() {
