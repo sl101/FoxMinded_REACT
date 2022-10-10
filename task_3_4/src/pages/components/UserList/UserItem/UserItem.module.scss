@@ -1,0 +1,23 @@
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.name {
+	align-self: start;
+	font-weight: 700;
+	color: teal;
+}
+
+.username {
+	width: 50%;
+	align-self: end;
+	font-style: italic;
+	font-weight: 500;
+	color: teal;
+}

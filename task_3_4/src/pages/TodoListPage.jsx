@@ -2,7 +2,11 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getTodos, getSelect, changeTodoAPI } from '../actions/todos';
 
+<<<<<<< HEAD
 import { TodoList } from '../components/TodoList';
+=======
+import { TodoList } from './components/TodoList';
+>>>>>>> 53a07870656b53aeead7344a02be3c563beb6583
 
 export const TodoListPage = () => {
   const dispatch = useDispatch();
