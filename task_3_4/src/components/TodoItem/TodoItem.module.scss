@@ -2,7 +2,6 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: #bbb;
 	&:not(:last-child) {
 		margin-bottom: 10px;
 	}
@@ -13,7 +12,6 @@
 	height: 18px;
 	outline: none;
 	margin: 0 5px;
-	background-color: #bbb;
 	transition: all 0.5s ease;
 }
 
@@ -29,7 +27,6 @@
 	pointer-events: none;
 	width: 100%;
 	cursor: default;
-	background-color: #bbb;
 	padding: 5px 10px 5px 10px;
 	&::first-letter {
 		text-transform: uppercase;

@@ -3,7 +3,7 @@ import {
   completeTodo,
   changeTodo
 } from '../redux/reducers/todoSlice';
-import todosAPI from '../shared/todosApi';
+import { todosAPI } from '../shared/todosApi';
 import { showLoader, hideLoader } from '../redux/reducers/loaderSlice';
 
 export const getTodos = () => async (dispatch) => {
@@ -20,6 +20,7 @@ export const getTodos = () => async (dispatch) => {
 
 export const getSelect = (selectedTarget) => async (dispatch) => {
   const { id, completed } = selectedTarget;
+  // debugger;
 
   const isCompleted = {
     completed: !completed

@@ -1,6 +1,6 @@
 import dataFetch from '../utils/axios';
 
-const todosAPI = {
+export const todosAPI = {
   fetchTodos(value) {
     return dataFetch.get(value);
   },
@@ -8,5 +8,3 @@ const todosAPI = {
     return dataFetch.patch(path, value);
   }
 };
-
-export default todosAPI;

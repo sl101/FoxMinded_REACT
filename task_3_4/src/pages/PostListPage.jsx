@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPosts } from '../actions/posts';
-
 import { PostList } from '../components/PostList';
 import { FormPost } from '../features/FormPost';
 
@@ -16,12 +15,10 @@ export const PostListPage = () => {
   }, []);
 
   return (
-    <section>
-      <div className="container">
-        <h2 className="title">Welcome to PostsList!</h2>
-        <FormPost />
-        <PostList isLoading={isLoading} posts={posts} />
-      </div>
+    <section className="section">
+      <h2 className="title">Welcome to PostsList!</h2>
+      <FormPost />
+      <PostList isLoading={isLoading} posts={posts} />
     </section>
   );
 };
