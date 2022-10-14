@@ -1,7 +1,7 @@
 export const AppRoutes = {
-  PostsList: '/',
+  Home: '/',
   TodoList: '/todolist',
-  UserList: '/userlist',
+  UsersList: '/userslist',
   UserPage: '/userpage/:id',
   UserItem: '/userpage/'
 };

@@ -1,7 +1,7 @@
 import dataFetch from '../utils/axios';
 
-export const usersAPI = {
-  fetchUsers(path) {
+export const tabsAPI = {
+  fetchTabs(path) {
     return dataFetch.get(path);
   }
 };

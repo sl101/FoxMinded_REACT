@@ -1,5 +1,5 @@
 import { receiveUsers, receiveUser } from '../redux/reducers/userSlice';
-import usersAPI from '../shared/usersApi';
+import { usersAPI } from '../shared/usersApi';
 import { showLoader, hideLoader } from '../redux/reducers/loaderSlice';
 
 export const getUsers = () => async (dispatch) => {

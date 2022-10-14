@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  posts: []
+  posts: [],
+  userPosts: []
 };
 
 const postSlice = createSlice({
@@ -16,10 +17,14 @@ const postSlice = createSlice({
       const { body, title, userId } = action.payload;
       const id = state.posts.length + 1;
       state.posts.unshift({ body, title, userId, id });
+      state.userPosts.unshift({ body, title, userId, id });
+    },
+    receiveUserPosts(state, action) {
+      state.userPosts = action.payload.reverse();
     }
   }
 });
 
-export const { receivePosts, inputPost } = postSlice.actions;
+export const { receivePosts, inputPost, receiveUserPosts } = postSlice.actions;
 
 export default postSlice.reducer;
