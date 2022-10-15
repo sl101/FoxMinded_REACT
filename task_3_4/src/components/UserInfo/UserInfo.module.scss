@@ -5,13 +5,16 @@
 }
 
 .inner {
-	flex: 0 0 90%;
-	background-color: white;
-	padding: 40px;
+	flex: 0 0 100%;
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 30px 0 rgba(255, 255, 255, 1);
+	padding: 40px 60px;
+	margin-bottom: 50px;
 }
 
 .list {
-	width: 50%;
 	margin: 0 auto;
 }
 

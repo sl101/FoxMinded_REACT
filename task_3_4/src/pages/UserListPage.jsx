@@ -14,11 +14,9 @@ export const UserListPage = () => {
   }, []);
 
   return (
-    <section>
-      <div className="container">
-        <h2 className="title">Welcome to UserList!</h2>
-        <UserList isLoading={isLoading} users={users} />
-      </div>
+    <section className="section">
+      <h2 className="title">Welcome to UserList!</h2>
+      <UserList isLoading={isLoading} users={users} />
     </section>
   );
 };

@@ -1,12 +1,12 @@
 import { receivePosts, inputPost } from '../redux/reducers/postSlice';
 import { showLoader, hideLoader } from '../redux/reducers/loaderSlice';
 
-import postsAPI from '../shared/postsApi';
+import { postsAPI } from '../shared/postsApi';
 
 export const getPosts = () => async (dispatch) => {
   try {
     dispatch(showLoader());
-    const responce = await postsAPI.fetchPosts();
+    const responce = await postsAPI.fetchPosts('/posts');
     dispatch(receivePosts(responce.data));
   } catch (error) {
     alert(error.message);

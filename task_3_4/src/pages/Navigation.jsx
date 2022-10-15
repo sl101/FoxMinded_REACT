@@ -6,7 +6,7 @@ export const Navigation = () => (
   <nav className="navigation">
     <ul className="list">
       <li className="item">
-        <NavLink className="link" to={AppRoutes.PostsList}>
+        <NavLink className="link" to={AppRoutes.Home}>
           PostList
         </NavLink>
       </li>
@@ -18,7 +18,7 @@ export const Navigation = () => (
       </li>
 
       <li className="item">
-        <NavLink className="link" to={AppRoutes.UserList}>
+        <NavLink className="link" to={AppRoutes.UsersList}>
           UserList
         </NavLink>
       </li>

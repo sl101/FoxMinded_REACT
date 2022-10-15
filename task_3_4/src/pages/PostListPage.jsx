@@ -15,12 +15,10 @@ export const PostListPage = () => {
   }, []);
 
   return (
-    <section>
-      <div className="container">
-        <h2 className="title">Welcome to PostsList!</h2>
-        <FormPost />
-        <PostList isLoading={isLoading} posts={posts} />
-      </div>
+    <section className="section">
+      <h2 className="title">Welcome to PostsList!</h2>
+      <FormPost />
+      <PostList isLoading={isLoading} posts={posts} />
     </section>
   );
 };
