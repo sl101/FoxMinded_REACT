@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FoxMinded_REACT/task_3_4/public/index.html/static/css/main.48dbc6ca.css",
+    "main.js": "/FoxMinded_REACT/task_3_4/public/index.html/static/js/main.1871e1f6.js",
+    "index.html": "/FoxMinded_REACT/task_3_4/public/index.html/index.html",
+    "main.48dbc6ca.css.map": "/FoxMinded_REACT/task_3_4/public/index.html/static/css/main.48dbc6ca.css.map",
+    "main.1871e1f6.js.map": "/FoxMinded_REACT/task_3_4/public/index.html/static/js/main.1871e1f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48dbc6ca.css",
+    "static/js/main.1871e1f6.js"
+  ]
+}
